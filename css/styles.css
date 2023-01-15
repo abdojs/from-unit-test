@@ -1,0 +1,89 @@
+.container {
+  width: 1800px;
+  margin: auto;
+}
+
+* {
+  padding: 0;
+  box-sizing: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+body {
+  background-color: #e9ecef;
+}
+
+input:focus-visible,
+input:focus,
+button:focus-visible,
+button:focus,
+textarea:focus-visible,
+textarea:focus,
+select:focus-visible,
+select:focus,
+input,
+button,
+textarea,
+select:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+header nav {
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #adb5bd;
+  box-shadow: 0 0 5px 1px #ced4da;
+}
+
+main {
+  padding-top: 3rem;
+}
+
+div.form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+div.pack-input {
+  padding: 1rem 1rem;
+  border: 1px solid #212529;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 20%;
+  background-color: #fff;
+  box-shadow: 0 0 10px 2px #d6dbe0;
+}
+
+.pack-input input {
+  border: 1px solid #adb5bd !important;
+}
+
+div.pack-input label {
+  text-transform: capitalize;
+  padding: 0 0 0.4rem;
+}
+div.pack-input input {
+  padding: 0.4rem 0.6rem;
+  width: calc(100% - 1.2rem);
+  border-radius: 5px;
+}
+div.pack-input input.input-normal:focus {
+  border-color: #0d6efd !important;
+  box-shadow: 0 0 10px -2px #9daec3;
+}
+div.pack-input input.input-error:focus {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 10px -2px #c57581;
+}
+
+/*# sourceMappingURL=styles.css.map */
