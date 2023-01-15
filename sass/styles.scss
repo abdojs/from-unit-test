@@ -1,0 +1,85 @@
+@use "./layout/container" as *;
+@use "./layout/base/base" as *;
+@use "./layout/var/var" as c;
+@use "sass:color";
+
+input:focus-visible,
+input:focus,
+button:focus-visible,
+button:focus,
+textarea:focus-visible,
+textarea:focus,
+select:focus-visible,
+select:focus,
+input,
+button,
+textarea,
+select:focus {
+    outline: none !important;
+    border: none !important
+}
+
+header nav {
+
+    padding: 1rem;
+
+    background-color: c.$white;
+
+    border-bottom: 1px solid c.$gray-500;
+
+
+    box-shadow: 0 0 5px 1px color.mix(c.$gray-500, c.$gray-400, 0%);
+
+
+}
+
+
+main {
+    padding-top: 3rem;
+}
+
+div.form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+div.pack-input {
+    padding: 1rem 1rem;
+    border: 1px solid c.$gray-900;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 20%;
+    background-color: c.$white;
+    box-shadow: 0 0 10px 2px color.mix(c.$gray-400, c.$gray-100, 80%);
+}
+
+.pack-input input {
+    border: 1px solid c.$gray-500 !important;
+}
+
+div.pack-input {
+
+    label {
+        text-transform: capitalize;
+        padding: 0 .0 .4rem;
+    }
+
+    input {
+        padding: .4rem .6rem;
+        width: calc(100% - 2*.6rem);
+        border-radius: 5px;
+
+        &.input-normal:focus {
+            border-color: c.$blue !important;
+            box-shadow: 0 0 10px -2px color.mix(c.$blue, c.$gray-500, 10%);
+        }
+
+        &.input-error:focus {
+            border-color: c.$red !important;
+            box-shadow: 0 0 10px -2px color.mix(c.$red, c.$gray-500, 50%);
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@use "../var/var" as c;
+
+* {
+    padding: 0;
+    box-sizing: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+
+
+label {
+    cursor: pointer;
+}
+
+body {
+    background-color: c.$gray-200;
+}
