@@ -56,10 +56,6 @@ div.pack-input {
     box-shadow: 0 0 10px 2px color.mix(c.$gray-400, c.$gray-100, 80%);
 }
 
-.pack-input input {
-    border: 1px solid c.$gray-500 !important;
-}
-
 div.pack-input {
 
     label {
@@ -71,6 +67,7 @@ div.pack-input {
         padding: .4rem .6rem;
         width: calc(100% - 2*.6rem);
         border-radius: 5px;
+        border: 1px solid c.$gray-500 !important;
 
         &.input-normal:focus {
             border-color: c.$blue !important;
@@ -81,5 +78,28 @@ div.pack-input {
             border-color: c.$red !important;
             box-shadow: 0 0 10px -2px color.mix(c.$red, c.$gray-500, 50%);
         }
+    }
+}
+
+button.btn-test-input {
+    text-transform: capitalize;
+    margin: 3rem auto !important;
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px -2px color.mix(c.$blue, c.$gray-500, 10%);
+    background-color: color.mix(c.$blue, c.$gray-500, 60%);
+    font-size: 1rem;
+    color: c.$white;
+    border-color: c.$red !important;
+    border: 1px solid color.mix(c.$blue, c.$gray-500, 100%) !important;
+    transition: .2s ease-in-out;
+
+    &:hover {
+        background-color: color.mix(c.$blue, c.$gray-500, 100%);
+    }
+
+    &:active {
+        background-color: color.mix(c.$blue, c.$gray-500, 60%);
     }
 }

@@ -1,4 +1,3 @@
-
 .container {
   width: 1800px;
   margin: auto;
@@ -65,10 +64,6 @@ div.pack-input {
   box-shadow: 0 0 10px 2px #d6dbe0;
 }
 
-.pack-input input {
-  border: 1px solid #adb5bd !important;
-}
-
 div.pack-input label {
   text-transform: capitalize;
   padding: 0 0 0.4rem;
@@ -77,6 +72,7 @@ div.pack-input input {
   padding: 0.4rem 0.6rem;
   width: calc(100% - 1.2rem);
   border-radius: 5px;
+  border: 1px solid #adb5bd !important;
 }
 div.pack-input input.input-normal:focus {
   border-color: #0d6efd !important;
@@ -85,6 +81,27 @@ div.pack-input input.input-normal:focus {
 div.pack-input input.input-error:focus {
   border-color: #dc3545 !important;
   box-shadow: 0 0 10px -2px #c57581;
+}
+
+button.btn-test-input {
+  text-transform: capitalize;
+  margin: 3rem auto !important;
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px -2px #9daec3;
+  background-color: #4d8ae3;
+  font-size: 1rem;
+  color: #fff;
+  border-color: #dc3545 !important;
+  border: 1px solid #0d6efd !important;
+  transition: 0.2s ease-in-out;
+}
+button.btn-test-input:hover {
+  background-color: #0d6efd;
+}
+button.btn-test-input:active {
+  background-color: #4d8ae3;
 }
 
 /*# sourceMappingURL=styles.css.map */
