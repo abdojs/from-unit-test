@@ -1,4 +1,3 @@
-import { inputText } from "./FunctionText/text.js";
 import { checkElement } from "./functions/CheckElement/CheckElement.js";
 import { selectById } from "./functions/SelectById/SelectByID.js";
 
@@ -9,7 +8,9 @@ import { selectById } from "./functions/SelectById/SelectByID.js";
 // const res = selectById([]);
 // const res = selectById("undefined")
 // const res = selectById(submit);
+
 const submit = selectById("submit-test")
+const check = checkElement(submit)
 
 
-console.log(submit);
+console.log(check);

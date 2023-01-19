@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watchAll"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
