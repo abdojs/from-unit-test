@@ -5,6 +5,7 @@
  */
 const string = (text) => {
 
+
     if (!(typeof text === "string"))
         return false;
     return true;
